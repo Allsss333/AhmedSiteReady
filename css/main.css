@@ -1,0 +1,282 @@
+@font-face {
+    font-family: ro;
+    src: url(../Fonts/Rixon-nj00.ttf);
+}
+
+@font-face {
+    font-family: so;
+    src: url(../Fonts/MechanismoRegular-p7ywa.otf);
+}
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Akshar', sans-serif;
+    font-family: 'Cairo', sans-serif;
+    background-color: black;
+}
+
+/* Header */
+
+header{
+    background-color: rgba(255, 0, 0, 0.862);
+    display: flex;
+    justify-content: space-between;
+    font-family: so;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+
+header a{
+    color: black;
+
+}
+
+header ul{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+header ul li{
+    
+    margin-left: 20px;
+}
+
+/* Section */
+
+section{
+    width: 100%;
+    min-height: 60vh;
+    background-color: rgb(255 255 255 / 7%)}
+
+.content{
+    padding: 150px 100px;
+    color: red;
+}
+
+.content p{
+    font-size: 20px;
+}
+
+.links{
+    margin-top: 20px;
+
+}
+
+
+.links a{
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+}
+
+.cards-con{
+    width: 100%;
+    background: black;
+    min-height: 80vh;
+    color: red;
+}   
+
+
+
+.cards-con h1{
+    width: 100%;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    color: black;
+}
+
+.card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    width: 350px;
+    min-height: 460px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.card img{
+    width: 60px;
+    height: 60px;
+}
+
+.videos{
+    padding-top: 50px;
+    width: 100%;
+    min-height: 70vh;
+    background-color: black;
+    color: red;
+    text-align: center;
+}
+
+.videos h2{
+    position: relative;
+    top: 50px;
+}
+
+.videos .vid-con{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.videos video{
+    
+    width: 430px;
+    height: 400px;
+}
+
+
+footer{
+    padding: 30px 0px;
+    width: 100%;
+    min-height: 40vh;
+    color: red;
+    background-color: rgb(255 255 255 / 7%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h1{
+    margin-top: 50px;
+}
+
+footer .call{
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media (max-width:1023px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    header{
+        font-size: 1px;
+    }
+
+    .content{
+        padding: 150px 45px;
+    }
+
+    .cards-con{
+        min-height: 180vh;
+        flex-direction: column;
+    }
+
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        margin-top: 30px;
+        max-width: 270px;
+    }
+
+
+    .videos{
+        min-height: 100vh;
+        flex-direction: column;
+    }
+
+    .vid-con{
+        flex-direction: column;
+    }
+
+    .videos video{
+    
+        width: 270px;
+        height: 280px;
+    }
+
+    .call{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+@media (max-width:992px){
+    .cards-con{
+        min-height: 130vh;
+        flex-direction: column;
+    }
+}
+
+
+
+
+@media (max-width:641px){
+    .cards-con{
+        min-height: 170vh;
+        flex-direction: column;
+    }
+
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        margin-top: 30px;
+    }
+
+
+    .videos{
+        min-height: 100vh;
+        flex-direction: column;
+    }
+
+    .vid-con{
+        flex-direction: column;
+    }
+
+    .videos video{
+    
+        width: 270px;
+        height: 280px;
+    }
+}
+
+
+@media (max-width:550px){
+    .cards-con{
+        min-height: 120vh;
+        flex-direction: column;
+    }
+}
+
+
+
+
+@media (max-width:300px){
+    
+}
